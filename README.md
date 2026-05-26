@@ -119,7 +119,7 @@ There are also a few other improvements worth highlighting:
 
 The following image shows an overlay of the V1 and V2 to better illustrate the differences.
 
-![JeNo Pocket V2 - V1 vs V2 over](./images/JeNoPocket_V2_vs_V1.png)
+![JeNo Pocket V2 - V1 vs V2 over](./images/JeNoPocket_V2_vs_V1.jpg)
 
 ### "À la carte" bottom plate options
 
@@ -149,7 +149,7 @@ The **single bus height** of the **V1**, 20 mm, was convenient because it was sp
 
 * **14 mm** : very low-profile, but be careful, the build will be more difficult
 * **16 mm** : a good compromise, making the build easier while staying relatively low profile — Nochamo’s preference
-* ** 18 mm** : allows for an easy build without going all the way up to 20 mm — Jérôme’s preference
+* **18 mm** : allows for an easy build without going all the way up to 20 mm — Jérôme’s preference
 * **20 mm** : still available for maximum space and Naked Vista compatibility
 
 We recommend the two intermediate versions: 16 or 18 mm.
@@ -180,11 +180,9 @@ A **reinforced version** of the top plate is also available for the **“Tank”
 
 For standard **Nano-sized** cameras, with one screw hole on each side, mounting is done directly through the central rail of the camera plates, allowing you to adjust the camera setback as needed.
 
-![JeNo Pocket V2 - Standard nano camera](./images/JeNoPocket_V2_NanoCam.jpg)
-
-<p align="center">
-  <img src="./images/JeNoPocket_V2_TPU_LensMod03.jpg">
-</p>
+| Standard nano camera | O3 Lens Mod |
+| :---: | :---: |
+| ![JeNo Pocket V2 - Standard nano camera](./images/JeNoPocket_V2_NanoCam.jpg) | ![JeNo Pocket V2 - O3 Lens Mod](./images/JeNoPocket_V2_TPU_LensMod03.jpg) |
 
 For the O4 Lite camera, we designed two-piece TPU mounts that wrap around the camera and are locked in place by the camera plates. Three TPU mounts are available:
 
@@ -218,7 +216,7 @@ Different approaches are possible, from ultra-light to mini-rocket, depending on
 
 2S motors can also be used on 3S thanks to **Betaflight’s Motor Limit** feature. In fact, this is probably the best approach: choosing motors around **7500–8000 KV** allows you to run them on both 2S and 3S.
 
-These small motors, such as the **RCInPower** 1203 8000KV or **BetaFPV** 1104 7500KV, are still quite expensive despite their size. A low-cost option is available from [**YSIDO** with their 1104 7500KV motors](https://github.com/WE-are-FPV/JeNo-Pocket), which can usually be found for around €20–25 for a set of 4. For bando flying, they probably won’t be the most durable option, but for freestyle, they do the job very well.
+These small motors, such as the **RCInPower** 1203 8000KV or **BetaFPV** 1104 7500KV, are still quite expensive despite their size. A low-cost option is available from [**YSIDO** with their 1104 7500KV motors](https://fr.aliexpress.com/item/1005005729701162.html), which can usually be found for around €20–25 for a set of 4. For bando flying, they probably won’t be the most durable option, but for freestyle, they do the job very well.
 
 ### Lipos
 
@@ -253,6 +251,7 @@ We did not want to exclude them from the recommended props for the JeNo Pocket V
 
 > [!TIP]
 > **Gemfan 2520 →** ideal for **all versions** of the JeNo Pocket V2
+> [!TIP]
 > **Emax Avan Rush →** we recommend the **“Classic”** or **“Tank”** versions for better flight behavior, especially during full-throttle punches.
 
 ### FC, ESCs and RX
