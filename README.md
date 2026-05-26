@@ -17,7 +17,7 @@
 * [Key features](#key-features)
 * [Presentation](#presentation)
 * [Detailed specifications](#detailed-specifications)
-* [What’s new compared to the V1](#what-s-new-compared-to-the-V1)
+* [What’s new compared to the V1](#whats-new-compared-to-the-v1)
 * [Recommended configuration](#recommended-configuration)
 * [Versions and files](#versions-and-files)
 * [Get it cut !](#buy-it-or-cut-it-)
