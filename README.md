@@ -251,6 +251,7 @@ We did not want to exclude them from the recommended props for the JeNo Pocket V
 
 > [!TIP]
 > **Gemfan 2520 →** ideal for **all versions** of the JeNo Pocket V2
+
 > [!TIP]
 > **Emax Avan Rush →** we recommend the **“Classic”** or **“Tank”** versions for better flight behavior, especially during full-throttle punches.
 
