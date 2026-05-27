@@ -427,8 +427,8 @@ Demonstration of the **JeNo Pocket's capabilities** :
 
 You can find many build examples on [WE are FPV's DroneBuilds](https://forum.wearefpv.fr/71-dronebuilds/) and [RotorBuilds](https://rotorbuilds.com) :
 
-* fr : [JeNo Pocket 2/3S 1104/1303](https://forum.wearefpv.fr/topic/24092-jeno-pocket) (by Jéjé FPV)
-* fr : [JeNo Pocket 2/3S 1203)](https://forum.wearefpv.fr/topic/24204-jeno-pocket-encore/) (by Jéjé FPV)
+* fr : [JeNo Pocket V2 Low Cost](https://forum.wearefpv.fr/topic/26226-jeno-pocket-v2-low-cost/) (by Jéjé FPV)
+* fr : [JeNo Pocket V2 Premium)](https://forum.wearefpv.fr/topic/26227-jeno-pocket-v2-premium/) (by Jéjé FPV)
 * ...
 
 Find numerous examples of builds on the _**DroneBuilds**_ page of WE are FPV.
