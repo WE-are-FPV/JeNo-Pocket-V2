@@ -4,7 +4,7 @@
 
 ![JeNo Pocket V2 - In the hand](./images/JeNoPocket_V2_Photo_0.jpg)
 
-# JeNo Pocket 2.5"
+# JeNo Pocket V2 2.5"
 ***2.5" drone FPV frame compatible with Air Unit O4 Lite (or any Nano camera), designed for Freestyle, Freeride and Cinematic.***
 
 > [!NOTE]
