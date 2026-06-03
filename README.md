@@ -417,7 +417,7 @@ Here is an overview of the vibration distribution across all 3 axes on the JeNo 
 ## Videos
 Presentation of the **JeNo Pocket V2** on the **WE are FPV** channel :
 
-[![JeNo Pocket V2 review on WE are FPV (French)](./images/JeNoPocket_video_review.jpg)](https://www.youtube.com/watch?v=WM7FAgx-Zp0 "JeNo Pocket review on WE are FPV (French) - Click to Watch!")
+[![JeNo Pocket V2 review on WE are FPV (French)](./images/JeNoPocket_V2_WAF_Review.jpg)](https://www.youtube.com/watch?v=tU0u5SXDFEE "JeNo Pocket V2 review on WE are FPV (French) - Click to Watch!")
 
 Demonstration of the **JeNo Pocket's capabilities** :
 
