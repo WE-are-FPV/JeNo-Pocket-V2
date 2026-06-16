@@ -367,6 +367,8 @@ The assembly of the frame is straightforward :
   <img src="./images/JeNoPocket_V2_Assembly.jpg">
 </p>
 
+[Complete build tutorial (French)](https://www.youtube.com/watch?v=vF8HRb9n8Hg)
+
 ### Lipo mounting
 
 Two areas are provided on the top plate, on each side of the logo, to stick two small LiPo pads if you want to use them. We recommend using 1.5 mm thick **LiPo pad** to keep the weight down.
