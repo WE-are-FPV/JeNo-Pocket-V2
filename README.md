@@ -314,9 +314,9 @@ To simplify things, we have reorganized the file structure. The files are now di
 
 ![JeNo Pocket V2, cut](./images/JeNoPocket_V2_Cut.jpg)
 
-Unlike the 3 and 5" JeNos, the JeNo Pocket won't be available in shops.
+The JeNo Pocket V2 is available at [FPV CNC Drone](https://fpvcncdrone.com/).
 
-The ["01-FRAME"](https://github.com/WE-are-FPV/JeNo-Pocket/tree/main/01-FRAME) folder contains all the files you need to get it **cut**. .DXF and .STEP files are available.
+The ["01-FRAME"](https://github.com/WE-are-FPV/JeNo-Pocket-V2/tree/main/01-FRAME) folder contains all the files you need to get it **cut**. .DXF and .STEP files are available.
 
 The bottom plate must be cut from 3 mm thick carbon fiber. The top plate and camera plates should be cut from 2 mm carbon fiber.
 
@@ -462,7 +462,7 @@ Coming soon...
 
 **TPU**
 
-Coming soon...
+* [TPU set for the JeNo Pocket V2](https://www.printables.com/model/1750173-jeu-de-tpu-pour-jeno-pocket-v2) by [AltiChoco FPV](https://www.printables.com/@Nono31_454985)
 
 ## Changelog
 
