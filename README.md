@@ -1,6 +1,6 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 > [!NOTE]
-> Current version : **2.0.0** (read [changelog](#changelog) for details)
+> Current version : **2.1.0** (read [changelog](#changelog) for details)
 
 ![JeNo Pocket V2 - In the hand](./images/JeNoPocket_V2_Photo_0.jpg)
 
