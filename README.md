@@ -18,6 +18,7 @@
 * [Presentation](#presentation)
 * [Detailed specifications](#detailed-specifications)
 * [What’s new compared to the V1](#whats-new-compared-to-the-v1)
+* [DJI O4 Wide camera plates](#Camera-plates-dji-o4-wide)
 * [Recommended configuration](#recommended-configuration)
 * [Versions and files](#versions-and-files)
 * [Get it cut !](#buy-it-or-cut-it-)
@@ -34,7 +35,7 @@
 * [Changelog](#changelog)
 
 ## Key features
-- [x] Perfect integration of the DJI **O4 Lite Air Unit** camera
+- [x] Perfect integration of the DJI **O4 Lite/Wide Air Unit** camera
 - [x] Compatible with **O3 lens mods (Khrom’s mod), and O4 Wide lens mods from Flywoo/Runcam**
 - [x] **Wide-X** geometry
 - [x] Excellent flight **performance**, easy to tune
@@ -42,7 +43,7 @@
 - [x] **Frame, standoffs and props are invisible** in the video feed
 - [x] **Camera tilt options** : 15, 20, 25, 30 and 35°
 - [x] **Bus height options** : 14, 16, 18 and 20 mm
-- [x] Designed for: DJI O4 Lite Air Unit (**+ mods**), Walksnail Avatar/Ascent, Artlynk, HDZero and analog setups
+- [x] Designed for: DJI O4 Lite/Wide Air Unit (**+ mods**), Walksnail Avatar/Ascent, Artlynk, HDZero and analog setups
 - [x] **Easy to build**, ideal for beginners
 - [x] LiPo strap slots
 - [x] Compatible with flight controllers featuring a vertical USB port (with the “X-Core” and “Tank” versions)
@@ -60,6 +61,7 @@ Following the success of the [first version of the JeNo Pocket](https://github.c
 * Updated, modern **design**
 * Reinforced **durability**
 * Compatibility with O4 Lite **lens mods**
+* Dedicated camera plates for the new DJI O4 Wide (which replaces the O4 Lite)
 * More options, so every pilot can find the setup that suits them:
   * Camera **tilt** options: 15, 20, 25, 30 or 35°
   * Bus **height** options: 14, 16, 18 or 20 mm
@@ -94,7 +96,7 @@ This V2 is heavily inspired by [Cam.Traveler](https://www.printables.com/@Cam_Tr
 | ** Camera tilt** | 15/20/25/30/35° |
 | **Main stack** | 25.5 mm x 25.5 | 
 | **Back stack** | RX area. 13 mm x 13 mm | 
-| **Supported VTX** | Analogic, **DJI Air Unit O4 Lite (+mods)**, WalkSnail Avatar/AScent, HDZero, ArtLynk… | 
+| **Supported VTX** | Analogic, **DJI Air Unit O4 Lite/Wide (+mods)**, WalkSnail Avatar/AScent, HDZero, ArtLynk… | 
 | **Strap passage** | Yes | 
 
 ## What’s new compared to the V1
@@ -159,6 +161,37 @@ Camera tilt is now also optional: the camera plates are available in **15, 20, 2
 ![JeNo Pocket V2 - Camera plates](./images/JeNoPocket_V2_CameraPlates_selected.jpg)
 
 As an example, in the image above, the version highlighted in red is the one to choose for an 18 mm bus height and a 25° camera tilt.
+
+### Camera plates DJI O4 Wide
+
+The **JeNo Pocket V1 and V2** were designed, in part, around the **DJI O4 Lite**. Unfortunately, it is **no longer available** and has been replaced by the **DJI O4 Wide**. While the VTX itself is identical, the camera—particularly the lens and its mounting system—is different.
+
+The larger size of the new DJI O4 Wide camera required us to design a new set of **dedicated** camera plates.
+
+![JeNo Pocket V2 - DJI O4 Wide](./images/JeNoPocket_V2_CameraPlates_Wide_Protection1.jpg)
+
+We could have replaced the standard camera plates with these new ones, but we did not want the DJI O4 Wide’s constraints to compromise compatibility with all the other cameras. You will therefore be able to choose between **two types of camera plates** for the JeNo Pocket V2:
+
+* **Standard** model: this is the original version and the one we recommend for **ALL** cameras **except** the DJI O4 Wide camera. Even when using a DJI O4 Lite with an **O3 lens mod**, this is the model you should choose.
+* **DJI O4 Wide** model: this version should **only** be used with the DJI O4 Wide. Its main advantage is that it does not require any TPU mount: the camera is screwed directly onto the camera plates. No modification or workaround is needed—it can be installed straight out of the box. The downside is that the plates are slightly larger and consist of separate left- and right-hand parts.
+
+The illustration below will help you visualize the difference in size.
+
+![JeNo Pocket V2 - DJI O4 Wide differences](./images/JeNoPocket_V2_CameraPlates_differences.png)
+
+To provide the **best possible protection** for the DJI O4 Wide lens while keeping its **FOV** completely **unobstructed**, we had to add **chamfers** to the central section. This means using two different, mirrored plates for the left and right sides.
+
+We would like to draw **carbon manufacturers’** attention to the precision of these chamfers. They are **essential** to allow the camera to be positioned as far back as possible.
+
+![JeNo Pocket V2 - DJI O4 Wide chamfers](./images/JeNoPocket_V2_CameraPlates_Chamfer.png)
+
+The camera must be moved forward precisely to the beginning of the chamfer, as shown in the photo below.
+
+![JeNo Pocket V2 - DJI O4 Wide placement](./images/JeNoPocket_V2_CameraPlates_Wide_Protection2.jpg)
+
+This ensures optimal protection.
+
+![JeNo Pocket V2 - DJI O4 Wide placement](./images/JeNoPocket_V2_CameraPlates_Wide_Protection3.jpg)
 
 ### Top plates
 
@@ -471,6 +504,9 @@ Coming soon...
 > [!TIP]
 > Compatibility is consistently maintained between each version: if your frame was a v1, the parts from v1.2 will be compatible. The same applies to TPU accessories. That's why we don't keep the history of previous versions.
 
+* Version **2.1.0** (25/07/2026) :
+  * Added dedicated camera plates for the DJI O4 Wide (an entire section has been added : [DJI O4 Wide camera plates](#Camera-plates-dji-o4-wide))
+  * Added slight reinforcement to the rear of the camera plates
 * Version **2.0.0** (01/06/2026) :
   * Release of the JeNo Pocket V2
 
