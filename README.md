@@ -170,7 +170,7 @@ The larger size of the new DJI O4 Wide camera required us to design a new set of
 
 ![JeNo Pocket V2 - DJI O4 Wide](./images/JeNoPocket_V2_CameraPlates_Wide_Protection1.jpg)
 
-We could have replaced the standard camera plates with these new ones, but we did not want the DJI O4 Wide’s constraints to compromise compatibility with all the other cameras. You will therefore be able to choose between **two types of camera plates** for the JeNo Pocket V2:
+We could have replaced the standard camera plates with these new ones, but we chose not to compromise the design for all the other cameras just to accommodate the constraints of the O4 Wide. You will therefore be able to choose between **two types of camera plates** for the JeNo Pocket V2:
 
 * **Standard** model: this is the original version and the one we recommend for **ALL** cameras **except** the DJI O4 Wide camera. Even when using a DJI O4 Lite with an **O3 lens mod**, this is the model you should choose.
 * **DJI O4 Wide** model: this version should **only** be used with the DJI O4 Wide. Its main advantage is that it does not require any TPU mount: the camera is screwed directly onto the camera plates. No modification or workaround is needed—it can be installed straight out of the box. The downside is that the plates are slightly larger and consist of separate left- and right-hand parts.
