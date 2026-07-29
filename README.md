@@ -498,6 +498,7 @@ Coming soon...
 **TPU**
 
 * [TPU set for the JeNo Pocket V2](https://www.printables.com/model/1750173-jeu-de-tpu-pour-jeno-pocket-v2) by [AltiChoco FPV](https://www.printables.com/@Nono31_454985)
+* [Backpack and lipo straps](https://www.printables.com/model/1794743-jeno-pocket-lipo-strap-2s-3s-with-balance-backpack) by [Alexis Germain](https://www.printables.com/@AlexisGermai_4588665)
 
 ## Changelog
 
