@@ -363,7 +363,9 @@ In addition to the carbon fiber, you will need the following hardware to complet
 
 **Standoffs**
 
-Important note: M2 standoffs come in two diameters: 3.5 mm and 4 mm. **Make sure to use 3.5 mm diameter standoffs**.
+Important note: M2 standoffs come in two diameters: 3.5 mm and 4 mm. **Make sure to use 3.5 mm diameter standoffs** (you can optionally keep a 4 mm diameter for the central standoff.).
+
+If you machine or manually shorten the standoffs, make sure to precisely match the bus height required for your camera plates.
 
 | Quantity | Description | Details |
 | :---: | :--- | :--- |
@@ -371,6 +373,8 @@ Important note: M2 standoffs come in two diameters: 3.5 mm and 4 mm. **Make sure
 | **2** | **M2x14mm** standoffs **(3.5 diameter)** | for the camera |
 
 **Stack materials**
+
+Titanium is lighter, but it will tend to bend over time after repeated hard crashes. This is even more noticeable with taller stacks.
 
 | Quantity | Description | Details |
 | :---: | :--- | :--- |
@@ -380,10 +384,13 @@ Important note: M2 standoffs come in two diameters: 3.5 mm and 4 mm. **Make sure
 
 **Frame materials**
 
+Don’t hesitate to apply a small amount of threadlocker to the screws to reduce the risk of them coming loose, which is fairly common on small, high-powered builds using M2 hardware.
+
 | Quantity | Description | Details |
 | :---: | :--- | :--- |
-| **3** | M2x6 mm countersunk screws (titanium if possible) | for the top plate |
-| **7** | **M2x6 mm** screws (titanium if possible) | for the bottom and camera plates |
+| **3** | **M2x6-8 mm** countersunk screws | for the top plate |
+| **3** | **M2x8-10 mm** screws | for the bottom and camera plates |
+| **4** | **M2x6 mm** screws (titanium if possible) | for the bottom and camera plates |
 
 **Additional materials**
 
