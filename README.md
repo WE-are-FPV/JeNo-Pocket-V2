@@ -389,8 +389,8 @@ Don’t hesitate to apply a small amount of threadlocker to the screws to reduce
 | Quantity | Description | Details |
 | :---: | :--- | :--- |
 | **3** | **M2x6-8 mm** countersunk screws | for the top plate |
-| **3** | **M2x8-10 mm** screws | for the bottom and camera plates |
-| **4** | **M2x6 mm** screws (titanium if possible) | for the bottom and camera plates |
+| **3** | **M2x8-10 mm** screws | for the bottom plate |
+| **4** | **M2x6 mm** screws (titanium if possible) | for camera plates |
 
 **Additional materials**
 
