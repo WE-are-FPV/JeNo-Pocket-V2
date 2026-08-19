@@ -25,6 +25,8 @@ XCORE_CENTER = (116.457, -169.963)
 TANK_CENTER = (115.885, -507.515)
 PATTERN_HALF_DIAGONAL = 18.2  # 25.5/sqrt(2), with selection tolerance
 FRAME_WINDOW = (55.0, -230.0, 178.0, -110.0)
+M2_CUT_RADIUS = 1.0
+NEW_PATTERN_HALF_SPACING = 10.0
 
 
 def bounds(entity):
@@ -90,6 +92,17 @@ def build_dxf():
     inplace(translated_tank, Matrix44.translate(dx, dy, 0.0))
     importer.import_entities(translated_tank, target_layout=output.modelspace())
     importer.finalize()
+
+    # Add a conventional 20 x 20 mm M2 mounting square. Relative to the
+    # existing 25.5 mm diamond, this pattern is rotated by 45 degrees.
+    cx, cy = XCORE_CENTER
+    for x_offset in (-NEW_PATTERN_HALF_SPACING, NEW_PATTERN_HALF_SPACING):
+        for y_offset in (-NEW_PATTERN_HALF_SPACING, NEW_PATTERN_HALF_SPACING):
+            output.modelspace().add_circle(
+                (cx + x_offset, cy + y_offset),
+                radius=M2_CUT_RADIUS,
+                dxfattribs={"layer": "Cut"},
+            )
 
     out = HERE / f"{STEM}.dxf"
     output.saveas(out)
