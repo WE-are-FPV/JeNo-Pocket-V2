@@ -18,6 +18,7 @@ import trimesh
 HERE = Path(__file__).resolve().parent
 SOURCE = HERE / "JeNoPocket_V2_ALL_VERSIONS_2.1.0.dxf"
 STEM = "JeNoPocket_V2_Custom"
+TOP_STEM = "JeNoPocket_V2_Custom_Top_Plate"
 
 # Centers measured from the source drawing. The FC pattern is a 25.5 mm square
 # rotated 45 degrees, so its horizontal/vertical diagonals are 25.5*sqrt(2).
@@ -25,6 +26,7 @@ XCORE_CENTER = (116.457, -169.963)
 TANK_CENTER = (115.885, -507.515)
 PATTERN_HALF_DIAGONAL = 18.2  # 25.5/sqrt(2), with selection tolerance
 FRAME_WINDOW = (55.0, -230.0, 178.0, -110.0)
+TOP_PLATE_WINDOW = (290.0, -225.0, 335.0, -115.0)
 M2_CUT_RADIUS = 1.0
 NEW_PATTERN_HALF_SPACING = 10.0
 
@@ -48,6 +50,18 @@ def inside_box(entity, cx, cy, half):
 def in_frame_window(entity):
     box = bounds(entity)
     x0, y0, x1, y1 = FRAME_WINDOW
+    return bool(
+        box
+        and box.extmin.x >= x0
+        and box.extmax.x <= x1
+        and box.extmin.y >= y0
+        and box.extmax.y <= y1
+    )
+
+
+def in_window(entity, window):
+    box = bounds(entity)
+    x0, y0, x1, y1 = window
     return bool(
         box
         and box.extmin.x >= x0
@@ -109,6 +123,26 @@ def build_dxf():
     return output, len(old_center), len(tank_center)
 
 
+def build_top_plate_dxf():
+    source = ezdxf.readfile(SOURCE)
+    allowed = {"LINE", "ARC", "CIRCLE", "LWPOLYLINE"}
+    entities = [
+        entity
+        for entity in source.modelspace()
+        if entity.dxftype() in allowed
+        and in_window(entity, TOP_PLATE_WINDOW)
+        and entity.dxf.layer != "Calque1_pocket"
+    ]
+
+    output = ezdxf.new("R2013", setup=True)
+    output.units = ezdxf.units.MM
+    importer = Importer(source, output)
+    importer.import_entities(entities, target_layout=output.modelspace())
+    importer.finalize()
+    output.saveas(HERE / f"{TOP_STEM}.dxf")
+    return output
+
+
 def cut_polygon(doc):
     segments = []
     for entity in doc.modelspace():
@@ -126,14 +160,14 @@ def cut_polygon(doc):
     return max(faces, key=lambda p: p.area)
 
 
-def build_stl(doc):
+def build_stl(doc, stem=STEM, thickness=3.0):
     polygon = cut_polygon(doc)
-    mesh = trimesh.creation.extrude_polygon(polygon, height=3.0)
-    mesh.export(HERE / f"{STEM}.stl")
+    mesh = trimesh.creation.extrude_polygon(polygon, height=thickness)
+    mesh.export(HERE / f"{stem}.stl")
     return mesh
 
 
-def build_pdf(doc):
+def build_pdf(doc, stem=STEM):
     page_w, page_h = landscape(A4)
     margin = 36.0
     drawing_box = bbox.extents(doc.modelspace(), fast=True)
@@ -143,7 +177,7 @@ def build_pdf(doc):
     offset_x = (page_w - width * scale) / 2 - drawing_box.extmin.x * scale
     offset_y = (page_h - height * scale) / 2 - drawing_box.extmin.y * scale
 
-    canvas = Canvas(str(HERE / f"{STEM}.pdf"), pagesize=(page_w, page_h))
+    canvas = Canvas(str(HERE / f"{stem}.pdf"), pagesize=(page_w, page_h))
     canvas.setStrokeColorRGB(0.0, 0.36, 1.0)
     canvas.setLineWidth(0.55)
     for entity in doc.modelspace():
@@ -166,8 +200,15 @@ def main():
     doc, removed, inserted = build_dxf()
     mesh = build_stl(doc)
     build_pdf(doc)
+    top_doc = build_top_plate_dxf()
+    top_mesh = build_stl(top_doc, stem=TOP_STEM, thickness=2.0)
+    build_pdf(top_doc, stem=TOP_STEM)
     print(f"Replaced {removed} X-Core center entities with {inserted} Tank entities")
     print(f"STL: {len(mesh.faces)} faces, watertight={mesh.is_watertight}, extents={mesh.extents}")
+    print(
+        f"Top plate STL: {len(top_mesh.faces)} faces, "
+        f"watertight={top_mesh.is_watertight}, extents={top_mesh.extents}"
+    )
 
 
 if __name__ == "__main__":
